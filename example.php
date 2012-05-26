@@ -16,6 +16,10 @@ class MyExample extends WP_Hooks {
 		// This will appear when using the shortcode [hello]
 		echo "I'm a shortcode called hello!";
 	}
+	function wp_head_10(){
+		// Action for popup alert with priority 10 (default anyways)
+		echo "<script>alert('I\'m a wp_head action!');</script>";
+	}
 }
 
 // Create our example object
