@@ -10,9 +10,9 @@ Features:
 * Implement behaviors for plugin de/activation, and uninstall - `function activation() {...`
 * Support non-PHP friendly action hooks that contain dash or slashes (bbPress)
 
-## Installation
+## Usage
 
-Just include the wp-hooks.php and string.php files in your plugin or WordPress theme.
+Include the wp-hooks.php and string.php files in your plugin or WordPress theme. wp-hooks.php references string.php. Simply `require_once('wp-hooks.php');` inside your functions.php or plugin file. To prevent naming collisions and increase efficiency, make use of `private function` declarations in your class to avoid inadvertently hooking an existing action/filter hook.
 
 ## License & Copyright
 
