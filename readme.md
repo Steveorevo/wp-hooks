@@ -16,4 +16,4 @@ Include the wp-hooks.php and string.php files in your plugin or WordPress theme.
 
 ## License & Copyright
 
-WP-Hooks is Copyright Stephen Carroll 2012, and is offered under the terms of the GNU General Public License, version 2. The String object definition, including parsing functions delLeftMost, getLeftMost, delRightMost, getRightMost, etc. are also offered under terms of the GNU General Public License, version 2 and is available in PHP, Java, JavaScript, ActionScript, Lingo, Visual Basic, RealStudio, Perl, VBScript, AppleScript and even MySQL! Please contact me for non-GPL, commercial licensing.
+WP-Hooks is Copyright Stephen Carnam 2012, and is offered under the terms of the GNU General Public License, version 2. The String object definition, including parsing functions delLeftMost, getLeftMost, delRightMost, getRightMost, etc. are also offered under terms of the GNU General Public License, version 2 and is available in PHP, Java, JavaScript, ActionScript, Lingo, Visual Basic, RealStudio, Perl, VBScript, AppleScript and even MySQL! Please contact me for non-GPL, commercial licensing.
