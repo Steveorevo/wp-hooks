@@ -32,7 +32,7 @@ require_once ('string.php');
 /**
  * Search WP_Hooks Class
  *
- * @since 0.6.0
+ * @since 0.6.1
  */
 if (! class_exists('WP_Hooks') ) {
     
@@ -51,9 +51,11 @@ if (! class_exists('WP_Hooks') ) {
                     $signature = new String( $method->name );
                     
                     // Convert _CamelCase to dash syntax & __ with / for bbPress support
+                    // Accomodate incompatible action names i.e. load-index.php
                     $name = (string) $signature->replaceAll('([A-Z])', '/$0')
                             ->replace('_/','/')
                             ->replace('__','-')
+                            ->replace('load_index_php', 'load-index.php')
                             ->toLowerCase();
                     $params = $method->getNumberOfParameters();
                     
