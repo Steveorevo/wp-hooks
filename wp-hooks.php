@@ -32,7 +32,7 @@ require_once ('string.php');
 /**
  * Search WP_Hooks Class
  *
- * @since 0.6.1
+ * @since 0.6.2
  */
 if (! class_exists('WP_Hooks') ) {
     
@@ -56,6 +56,7 @@ if (! class_exists('WP_Hooks') ) {
                             ->replace('_/','/')
                             ->replace('__','-')
                             ->replace('load_index_php', 'load-index.php')
+                            ->replace('acf_register_fields', 'acf/register_fields')
                             ->toLowerCase();
                     $params = $method->getNumberOfParameters();
                     
