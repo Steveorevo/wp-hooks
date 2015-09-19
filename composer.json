@@ -8,7 +8,7 @@
       "email": "steve@steveorevo.com",
       "homepage": "http://steveorevo.com",
       "role": "developer"
-    },
+    }
   ],
   "require": {
       "Steveorevo/String": "1.*"
