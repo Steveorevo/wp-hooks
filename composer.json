@@ -1,0 +1,16 @@
+{
+  "name": "steveorevo/wp-hooks",
+  "description": "WP-Hooks is a base class that minimizes the overhead of creating WordPress plugins and functions. Simply create a class that extends the WP_Hooks class and start defining functions for the given action, filter, shortcode or registration event.",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Stephen J. Carnam",
+      "email": "steve@steveorevo.com",
+      "homepage": "http://steveorevo.com",
+      "role": "developer"
+    },
+  ],
+  "require": {
+      "Steveorevo/String": "1.*"
+  }
+}
