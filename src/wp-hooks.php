@@ -28,8 +28,8 @@ namespace Steveorevo;
 if ( class_exists( 'WP_Hooks' ) ) return;
 class WP_Hooks {
     public function __construct() {
-        $self = new ReflectionClass( $this );
-        $public_methods = $self->getMethods( ReflectionMethod::IS_PUBLIC );
+        $self = new \ReflectionClass( $this );
+        $public_methods = $self->getMethods( \ReflectionMethod::IS_PUBLIC );
 
         if ( empty ( $public_methods ) ) {
             return;
