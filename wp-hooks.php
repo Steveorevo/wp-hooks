@@ -24,6 +24,7 @@
  * @since 4.0.0
  */
 require_once ('string.php');
+if ( class_exists( 'WP_Hooks' ) ) return;
 class WP_Hooks {
     public function __construct() {
         $self = new ReflectionClass( $this );
