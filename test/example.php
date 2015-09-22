@@ -5,7 +5,7 @@
  *
  */
  
-require_once ('wp-hooks.php');
+require_once ('../src/wp-hooks.php');
 
 class MyExample extends WP_Hooks {
 	function wp_footer(){

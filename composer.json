@@ -11,6 +11,9 @@
     }
   ],
   "require": {
-      "Steveorevo/String": "1.*"
-  }
+      "steveorevo/string": "1.*"
+  },
+  "autoload": {
+        "psr-4": {"Steveorevo\\": "src/"}
+    }
 }
