@@ -12,11 +12,8 @@ Features:
 
 ## Usage
 
-<<<<<<< d05f4539649f233e542a10aab02bb2aec6d3ed87
-Include the wp-hooks.php and gstring.php files in your plugin or WordPress theme. wp-hooks.php references string.php. Simply `require_once('wp-hooks.php');` inside your functions.php or plugin file. To prevent naming collisions and increase efficiency, make use of `private function` declarations in your class to avoid inadvertently hooking an existing action/filter hook.
-=======
 See the example in test/plugin-example. Use "composer install" and the autoloader to include wp-hooks.php and gstring.php files in your plugin or WordPress theme. To prevent naming collisions and increase efficiency, make use of `private function` declarations in your class to avoid inadvertently hooking an existing action/filter hook.
->>>>>>> Refactored for PHP7
+
 
 ## License & Copyright
 
