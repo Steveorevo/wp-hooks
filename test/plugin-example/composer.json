@@ -1,0 +1,19 @@
+{
+  "name": "steveorevo/example-plugin",
+  "description": "An example plugin that uses WP-Hooks.",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Stephen J. Carnam",
+      "email": "steve@steveorevo.com",
+      "homepage": "http://steveorevo.com",
+      "role": "developer"
+    }
+  ],
+  "require": {
+      "steveorevo/wp-hooks": "dev-master"
+  },
+  "autoload": {
+        "psr-4": {"Steveorevo\\": "src/"}
+    }
+}

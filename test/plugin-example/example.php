@@ -1,11 +1,19 @@
 <?php
-/*
- * This is an example. If this was included in your functions.php in your theme,
- * it would do stuff...
- *
+/**
+ * @package Example_Plugin
+ * @version 1.0
  */
- 
-require_once ('../src/wp-hooks.php');
+/*
+Plugin Name: Example Plugin
+Plugin URI: http://steveorevo.com/
+Description: This simple plugin illustrates the OOP use of wp-hooks.
+Author: Stephen J. Carnam
+Version: 1.0
+Author URI: http://steveorevo.com/
+*/
+
+require('vendor/autoload.php');
+use Steveorevo\WP_Hooks;
 
 class MyExample extends WP_Hooks {
 	function wp_footer(){
@@ -25,4 +33,3 @@ class MyExample extends WP_Hooks {
 // Create our example object
 global $me;
 $me = new MyExample();
-?>
