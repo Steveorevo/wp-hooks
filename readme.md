@@ -12,8 +12,17 @@ Features:
 
 ## Usage
 
+<<<<<<< d05f4539649f233e542a10aab02bb2aec6d3ed87
 Include the wp-hooks.php and gstring.php files in your plugin or WordPress theme. wp-hooks.php references string.php. Simply `require_once('wp-hooks.php');` inside your functions.php or plugin file. To prevent naming collisions and increase efficiency, make use of `private function` declarations in your class to avoid inadvertently hooking an existing action/filter hook.
+=======
+See the example in test/plugin-example. Use "composer install" and the autoloader to include wp-hooks.php and gstring.php files in your plugin or WordPress theme. To prevent naming collisions and increase efficiency, make use of `private function` declarations in your class to avoid inadvertently hooking an existing action/filter hook.
+>>>>>>> Refactored for PHP7
 
 ## License & Copyright
 
-WP-Hooks is Copyright Stephen Carnam 2012, and is offered under the terms of the GNU General Public License, version 2. The String object definition, including parsing functions delLeftMost, getLeftMost, delRightMost, getRightMost, etc. are also offered under terms of the GNU General Public License, version 2 and is available in PHP, Java, JavaScript, ActionScript, Lingo, Visual Basic, RealStudio, Perl, VBScript, AppleScript and even MySQL! Please contact me for non-GPL, commercial licensing.
+WP-Hooks is Copyright Stephen Carnam 2016, and is offered under the terms of the GNU General Public License, version 2. The GString object definition, including parsing functions delLeftMost, getLeftMost, delRightMost, getRightMost, etc. are also offered under terms of the GNU General Public License, version 2 and is available in PHP, Java, JavaScript, ActionScript, Lingo, Visual Basic, RealStudio, Perl, VBScript, AppleScript and even MySQL! Please contact me for non-GPL, commercial licensing.
+
+## Change Log
+
+### Version 1.1.0
+* Now Composer ready and PHP7 friendly; See test/plugin-example.
