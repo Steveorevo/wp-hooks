@@ -1,26 +1,26 @@
 <?php
 /**
- * The WP_Hooks class allows you to quickly and easily extend WordPress via 
+ * The WP_Hooks class allows you to quickly and easily extend WordPress via
  * actions & filter hooks, shortcodes, and registration events. Simply create a class
  * that extends the WP_Hooks class and define functions of the given action, filter
- * shortcode, or registration event you wish to implement behaviors for. You can specify 
+ * shortcode, or registration event you wish to implement behaviors for. You can specify
  * priorities by extending the function name with an underscore and priority numeric i.e.
- * 
+ *
  * function wp_head_10() { ...
  *
  * Implement hooks that use the dash and slash symbol using double underscore and double
  * underscore + Camel case. i.e.
  *
  * function shortcode_edit__post__link() {...
- *    // Creates a shortcode [edit-post-link]   
+ *    // Creates a shortcode [edit-post-link]
  *
  * or
  *
  * function get_template_part_bbpress_Content() { ...
  *    // Hooks "get_template_part_bbpress/content"
- * 
+ *
  * @package DesktopServer
- * @uses String class
+ * @uses GString class
  * @since 4.0.0
  */
 namespace Steveorevo;
@@ -34,11 +34,11 @@ class WP_Hooks {
         if ( empty ( $public_methods ) ) {
             return;
         }
-        foreach ( $public_methods as $method ) {                
+        foreach ( $public_methods as $method ) {
             if ( $method->name != '__construct' ){
 
-                // Parse string 
-                $signature = new String( $method->name );
+                // Parse string
+                $signature = new GString( $method->name );
 
                 // Convert CamelCase to forward slash syntax and double underscore to a dash in
                 // for bbPress. Also support and accomodate incompatible action names i.e. load-index.php
@@ -47,7 +47,7 @@ class WP_Hooks {
                     ->replace( '__','-')
                     ->replace( 'load_index_php', 'load-index.php' )
                     ->replace( '_php', '.php' );
-                
+
                 // Optimized for speed, handle acf only if present
                 if ( strpos( $method->name, 'acf_' ) !== false ) {
                     $signature = $signature->replace( 'acf_helpers_', 'acf/helpers/' )
@@ -72,7 +72,7 @@ class WP_Hooks {
 
                 // Look for shortcode definition
                 }elseif ( $signature->getLeftMost('_')->equals('shortcode') ){
-                    $signature = new String($name);
+                    $signature = new GString($name);
                     add_shortcode(
                         (string) $signature->delLeftMost('_'),
                         array ( $this, $method->name )
@@ -85,7 +85,7 @@ class WP_Hooks {
                     $priority = (string) $signature->getRightMost('_');
                     if ( is_numeric( $priority ) ){
                         $priority = (int) $priority;
-                        $signature = new String($name);
+                        $signature = new GString($name);
                         $name = (string) $signature->delRightMost('_');
                     }else{
                         $priority = 10;

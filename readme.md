@@ -12,7 +12,7 @@ Features:
 
 ## Usage
 
-Include the wp-hooks.php and string.php files in your plugin or WordPress theme. wp-hooks.php references string.php. Simply `require_once('wp-hooks.php');` inside your functions.php or plugin file. To prevent naming collisions and increase efficiency, make use of `private function` declarations in your class to avoid inadvertently hooking an existing action/filter hook.
+Include the wp-hooks.php and gstring.php files in your plugin or WordPress theme. wp-hooks.php references string.php. Simply `require_once('wp-hooks.php');` inside your functions.php or plugin file. To prevent naming collisions and increase efficiency, make use of `private function` declarations in your class to avoid inadvertently hooking an existing action/filter hook.
 
 ## License & Copyright
 

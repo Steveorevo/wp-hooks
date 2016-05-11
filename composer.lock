@@ -1,0 +1,65 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "29da9c8b337458258127bc10f542cb8b",
+    "content-hash": "ea910eafe6eb34f4374ea3fdcbb815f6",
+    "packages": [
+        {
+            "name": "steveorevo/gstring",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Steveorevo/GString.git",
+                "reference": "d02ea3384e7c0df92892c868f258d246f64d48d7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Steveorevo/GString/zipball/d02ea3384e7c0df92892c868f258d246f64d48d7",
+                "reference": "d02ea3384e7c0df92892c868f258d246f64d48d7",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Steveorevo\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Stephen J. Carnam",
+                    "email": "steve@steveorevo.com",
+                    "homepage": "http://steveorevo.com",
+                    "role": "developer"
+                },
+                {
+                    "name": "Michael Scribellito",
+                    "email": "mscribellito@gmail.com",
+                    "homepage": "http://mscribellito.com",
+                    "role": "developer"
+                }
+            ],
+            "description": "Implements OOP String handling with useful parsing functions.",
+            "homepage": "https://github.com/Steveorevo/GString",
+            "keywords": [
+                "OOP",
+                "string"
+            ],
+            "time": "2016-05-11 20:05:40"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
