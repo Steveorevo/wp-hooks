@@ -19,12 +19,6 @@
  * function get_template_part_bbpress_Content() { ...
  *    // Hooks "get_template_part_bbpress/content"
  *
-<<<<<<< d05f4539649f233e542a10aab02bb2aec6d3ed87
- * @package DesktopServer
- * @uses GString class
- * @since 4.0.0
-=======
->>>>>>> Refactored for PHP7
  */
 namespace Steveorevo;
 
